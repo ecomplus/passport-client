@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.10](https://github.com/ecomplus/passport-client/compare/v1.0.9...v1.0.10) (2020-05-16)
+
+
+### Bug Fixes
+
+* **set-cookie:** save cookie with sameSite=strict ([1ecfb1f](https://github.com/ecomplus/passport-client/commit/1ecfb1f7f21351339e8b712a456829c25bd91cfa))
+
 ### [1.0.9](https://github.com/ecomplus/passport-client/compare/v1.0.8...v1.0.9) (2020-04-03)
 
 ### [1.0.8](https://github.com/ecomplus/passport-client/compare/v1.0.7...v1.0.8) (2020-04-02)
