@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@ecomplus/client": "^2.0.4",
-    "eventemitter3": "^4.0.3"
+    "eventemitter3": "^4.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
