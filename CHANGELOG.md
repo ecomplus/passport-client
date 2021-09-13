@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/ecomplus/passport-client/compare/v1.0.10...v1.1.0) (2021-09-13)
+
+
+### Features
+
+* **fetch-login:** new optional `emailCode` param for login with email and verification code ([6e0abb4](https://github.com/ecomplus/passport-client/commit/6e0abb467702144d9597827b0ed11566f7f9adbe))
+* **send-email-code:** send verification code by email before login/signup ([9589c2f](https://github.com/ecomplus/passport-client/commit/9589c2fa1d1db281fb6aa001c735798499aae03f))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eventemitter3 to ^4.0.4 ([#65](https://github.com/ecomplus/passport-client/issues/65)) ([85b19e1](https://github.com/ecomplus/passport-client/commit/85b19e142655c68e7c2d2b1cff3c4287aa1714e1))
+
 ### [1.0.10](https://github.com/ecomplus/passport-client/compare/v1.0.9...v1.0.10) (2020-05-16)
 
 
