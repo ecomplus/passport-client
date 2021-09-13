@@ -17,6 +17,7 @@ import checkVerification from './methods/check-verification'
 import logout from './methods/logout'
 import popupOauthLink from './methods/popup-oauth-link'
 import popupLogin from './methods/popup-login'
+import sendEmailCode from './methods/send-email-code'
 import requestApi from './methods/request-api'
 
 /**
@@ -166,7 +167,7 @@ const EcomPassport = function (
 
   this.checkVerification = () => methodsMiddleware(checkVerification)
 
-  this.fetchLogin = (email, docNumber) => methodsMiddleware(fetchLogin, [email, docNumber])
+  this.fetchLogin = (email, docNumber, emailCode) => methodsMiddleware(fetchLogin, [email, docNumber, emailCode])
 
   this.fetchOauthProfile = () => methodsMiddleware(fetchOauthProfile)
 
@@ -181,6 +182,8 @@ const EcomPassport = function (
   this.popupOauthLink = url => methodsMiddleware(popupOauthLink, [url])
 
   this.popupLogin = (enableSkip, baseUri) => methodsMiddleware(popupLogin, [enableSkip, baseUri])
+
+  this.sendEmailCode = email => methodsMiddleware(sendEmailCode, [email])
 
   loadStoredSession(ecomPassport)
 }
