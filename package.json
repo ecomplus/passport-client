@@ -8,7 +8,7 @@
   "jsdelivr": "dist/ecom-passport.var.min.js",
   "unpkg": "dist/ecom-passport.var.min.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "serve": "webpack-dev-server",
     "doc": "rm -rf ./docs/*; jsdoc ./src -r ./README.md -d ./docs -t ./node_modules/docdash",
     "release": "rm -rf ./dist; npm ddp && npm run build && standard-version"
@@ -49,6 +49,7 @@
     "@ecomplus/utils": "^1.4.1",
     "babel-loader": "^8.2.2",
     "core-js": "^3.17.2",
+    "cross-env": "^7.0.3",
     "docdash": "^1.2.0",
     "husky": "^4.3.8",
     "jsdoc": "^3.6.7",
