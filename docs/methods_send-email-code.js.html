@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>methods/get-customer.js - Documentation</title>
+    <title>methods/send-email-code.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">methods/get-customer.js</h1>
+    <h1 class="page-title">methods/send-email-code.js</h1>
     
 
     
@@ -42,21 +42,32 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
+            <pre class="prettyprint source linenums"><code>import { passport } from '@ecomplus/client'
+
+/**
  * @method
- * @name EcomPassport#getCustomer
- * @description Get current customer account object.
+ * @name EcomPassport#sendEmailCode
+ * @description Send verification code by email before login/signup.
  *
- * @returns {object}
+ * @param {string} email - Customer main email address
+ *
+ * @returns {Promise&lt;response|error>}
  *
  * @example
 
-const customer = ecomPassport.getCustomer()
-console.log(customer.main_email)
+ecomPassport.sendEmailCode('example@mail.com')
+  .catch(console.error)
 
  */
 
-export default ({ customer }) => customer || {}
+export default ({ storeId, lang }, emitter, [email]) => passport({
+  url: `/${lang}/email-code`,
+  storeId,
+  method: 'PUT',
+  data: {
+    email
+  }
+})
 </code></pre>
         </article>
     </section>
