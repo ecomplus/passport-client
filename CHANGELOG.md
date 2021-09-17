@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/ecomplus/passport-client/compare/v1.1.0...v1.1.1) (2021-09-17)
+
+
+### Bug Fixes
+
+* **check-login:** check for auth and id instead of name (may be empty) ([2d711a6](https://github.com/ecomplus/passport-client/commit/2d711a6bc242e918271de26f7c550ac8d72b09b3))
+
 ## [1.1.0](https://github.com/ecomplus/passport-client/compare/v1.0.10...v1.1.0) (2021-09-13)
 
 
