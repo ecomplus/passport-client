@@ -11,4 +11,4 @@ ecomPassport.checkLogin()
 
  */
 
-export default ({ getCustomerName }) => Boolean(getCustomerName())
+export default ({ session }) => Boolean(session.auth && session.auth.id)
