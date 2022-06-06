@@ -35,7 +35,7 @@
     "@ecomplus/utils": "^1.4.1"
   },
   "optionalDependencies": {
-    "core-js": "^3.22.7"
+    "core-js": "^3.22.8"
   },
   "dependencies": {
     "@ecomplus/client": "^2.2.1",
@@ -44,11 +44,11 @@
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
-    "@commitlint/cli": "^17.0.1",
-    "@commitlint/config-conventional": "^17.0.0",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@ecomplus/utils": "^1.4.1",
     "babel-loader": "^8.2.5",
-    "core-js": "^3.22.7",
+    "core-js": "^3.22.8",
     "cross-env": "^7.0.3",
     "docdash": "^1.2.0",
     "husky": "^4.3.8",
@@ -57,7 +57,7 @@
     "standard-version": "^9.3.2",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0"
+    "webpack-dev-server": "^4.9.2"
   },
   "husky": {
     "hooks": {
