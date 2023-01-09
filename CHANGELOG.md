@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/ecomplus/passport-client/compare/v1.1.1...v1.1.2) (2023-01-09)
+
+
+### Bug Fixes
+
+* **deps:** accept `eventemitter3` v4 and v5 ([70ece44](https://github.com/ecomplus/passport-client/commit/70ece44eb8d67effc9e8e9eaee7d7d7e49b38436))
+* **deps:** update dependency eventemitter3 to v5 ([#193](https://github.com/ecomplus/passport-client/issues/193)) ([0d4535b](https://github.com/ecomplus/passport-client/commit/0d4535bf293a0cd6709be15148bf900af13fae9d))
+
 ### [1.1.1](https://github.com/ecomplus/passport-client/compare/v1.1.0...v1.1.1) (2021-09-17)
 
 
