@@ -42,9 +42,9 @@
     "eventemitter3": "^4.0.7 || ^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
-    "@commitlint/cli": "^17.5.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@ecomplus/utils": "^1.4.1",
     "babel-loader": "^8.3.0",
@@ -57,7 +57,7 @@
     "standard-version": "^9.3.2",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.13.1"
+    "webpack-dev-server": "^4.13.2"
   },
   "husky": {
     "hooks": {
