@@ -1,6 +1,6 @@
 {
   "name": "@ecomplus/passport-client",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Handle customer authentication with E-Com Plus Passport",
   "module": "src/index.js",
   "browser": "dist/ecom-passport.min.js",

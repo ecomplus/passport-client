@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ecomplus/passport-client/compare/v1.1.2...v1.2.0) (2023-11-05)
+
+
+### Features
+
+* edit `requestApi` to support direct calls to Store API v2 ([cf9f755](https://github.com/ecomplus/passport-client/commit/cf9f755605c09bce10038c2c0e7a980b8a742c0a))
+
 ### [1.1.2](https://github.com/ecomplus/passport-client/compare/v1.1.1...v1.1.2) (2023-01-09)
 
 
