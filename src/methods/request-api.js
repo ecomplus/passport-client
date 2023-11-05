@@ -37,7 +37,20 @@ export default (
   if (!checkAuthorization()) {
     return Promise.reject(new Error('Unauthorized, requires login with OAuth or doc number'))
   }
-  if (url.indexOf('api/') < 0) {
+  let isApiV2
+  try {
+    isApiV2 = globalThis.ECOMCLIENT_API_PASSPORT?.startsWith('https://ecomplus.io/v2/')
+  } catch {
+    //
+  }
+  if (isApiV2) {
+    if (url.indexOf('api/') >= 0) {
+      url = url.replace(/\/?api\//, '')
+    }
+    if (url.endsWith('/me.json')) {
+      url = url.replace('/me.json', `/customers/${session.auth.id}`)
+    }
+  } else if (url.indexOf('api/') < 0) {
     url = '/api' + (url.charAt(0) === '/' ? url : `/${url}`)
   }
 
@@ -49,7 +62,10 @@ export default (
     method,
     data
   }).then(response => {
-    if (url.endsWith('/me.json') && method === 'patch') {
+    if (
+      method === 'patch' &&
+      (url.endsWith('/me.json') || url.indexOf(`/customers/${session.auth.id}`) >= 0)
+    ) {
       setCustomer(data)
     }
     return response
