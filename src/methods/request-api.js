@@ -39,7 +39,10 @@ export default (
   }
   let isApiV2
   try {
-    isApiV2 = globalThis.ECOMCLIENT_API_PASSPORT?.startsWith('https://ecomplus.io/v2/')
+    const { ECOMCLIENT_API_PASSPORT } = (typeof window === 'object' && window) ||
+      (typeof process === 'object' && process && process.env) ||
+      {}
+    isApiV2 = Boolean(ECOMCLIENT_API_PASSPORT && ECOMCLIENT_API_PASSPORT.startsWith('https://ecomplus.io/v2/'))
   } catch {
     //
   }
