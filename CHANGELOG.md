@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/ecomplus/passport-client/compare/v1.2.0...v1.2.1) (2023-11-06)
+
+
+### Bug Fixes
+
+* properly checking `ECOMCLIENT_API_PASSPORT` env and prevent error with conditional chain ([20a8fc6](https://github.com/ecomplus/passport-client/commit/20a8fc6dfb0a416dc1e954d0494476c3b45785f2))
+
 ## [1.2.0](https://github.com/ecomplus/passport-client/compare/v1.1.2...v1.2.0) (2023-11-05)
 
 
