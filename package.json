@@ -35,7 +35,7 @@
     "@ecomplus/utils": "^1.4.1"
   },
   "optionalDependencies": {
-    "core-js": "^3.45.1"
+    "core-js": "^3.46.0"
   },
   "dependencies": {
     "@ecomplus/client": "^2.4.0",
@@ -48,11 +48,11 @@
     "@commitlint/config-conventional": "^17.8.1",
     "@ecomplus/utils": "^1.4.1",
     "babel-loader": "^8.4.1",
-    "core-js": "^3.45.1",
+    "core-js": "^3.46.0",
     "cross-env": "^7.0.3",
     "docdash": "^2.0.2",
     "husky": "^4.3.8",
-    "jsdoc": "^4.0.4",
+    "jsdoc": "^4.0.5",
     "standard": "^17.1.2",
     "commit-and-tag-version": "^9.6.0",
     "webpack": "^4.47.0",
